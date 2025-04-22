@@ -67,6 +67,8 @@ export default function HomePage() {
       >
         <p className="text-sm text-[#7a7a7a] mb-4">I've worked with ambitious teams like</p>
         <div className="relative w-full h-16 overflow-hidden">
+          <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-[#0e0e0e] to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-[#0e0e0e] to-transparent z-10 pointer-events-none"></div>
           <div className="flex animate-scroll space-x-12 w-max">
             {[...logos, ...logos, ...logos].map((logo, i) => (
               <div key={i} className="flex items-center justify-center w-40 h-12 rounded hover:bg-[#2a2a2a] transition duration-500">
@@ -95,7 +97,7 @@ export default function HomePage() {
           100% { transform: translateX(-100%); }
         }
         .animate-scroll {
-          animation: scroll 40s linear infinite;
+          animation: scroll 120s linear infinite;
         }
       `}</style>
     </main>
