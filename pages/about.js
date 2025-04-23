@@ -15,7 +15,7 @@ export default function AboutPage() {
     <main className="bg-[#0e0e0e] text-[#d4d4d4] min-h-screen px-6 md:px-12 lg:px-20 py-12 font-inter space-y-20">
       <Navbar />
 
-      <section className="flex flex-col-reverse md:grid md:grid-cols-3 gap-[80px] items-start">
+      <section className="flex flex-col md:grid md:grid-cols-3 gap-[80px] items-start">
         {/* Experience Column */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
