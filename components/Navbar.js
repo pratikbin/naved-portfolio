@@ -25,9 +25,10 @@ export default function Navbar() {
   };
 
   return (
-    <header className="relative">
-      <div className="flex justify-between items-center px-0 pt-0">
-        <div className="text-sm font-medium">Naved</div>
+   <>
+     <header className="fixed top-0 left-0 right-0 flex items-center w-full h-16 z-50 bg-[#0e0e0e]/70 backdrop-blur-md">
+      <div className="flex w-full justify-between items-center px-6 md:px-12 lg:px-20">
+        <Link href="/" className="text-sm font-medium">Naved</Link>
         <button 
           className="sm:hidden p-2 z-50"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -54,8 +55,11 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
-      <AnimatePresence>
+   
+    </header>
+
+       {/* Mobile Menu Overlay */}
+       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
             initial={{ opacity: 0 }}
@@ -100,6 +104,6 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+   </>
   );
 }

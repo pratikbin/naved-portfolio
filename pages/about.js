@@ -13,31 +13,13 @@ const experiences = [
 export default function AboutPage() {
   return (
     <main className="bg-[#0e0e0e] text-[#d4d4d4] min-h-screen px-6 md:px-12 lg:px-20 py-12 font-inter space-y-20">
-      <Navbar />
 
-      <section className="flex flex-col md:grid md:grid-cols-3 gap-[80px] items-start">
-           {/* Bio Column */}
-           <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.8 }}
-          className="text-right"
-        >
-          <p className="text-xl leading-relaxed text-[#7a7a7a] max-w-2xl mb-8">
-            I’m a designer based in India, passionate about clean interfaces, systems thinking, and storytelling. I bridge design, code, and communication and I’ve spent the last few years working with dev-first products, AI tools, and Web3 infra.
-          </p>
 
-          <div className="grid grid-cols-2 gap-4 mb-8">
-            <div className="bg-[#1a1a1a] aspect-[5/8] rounded" />
-            <div className="bg-[#1a1a1a] aspect-[5/8] rounded" />
-          </div>
-
-          <p className="text-xl leading-relaxed text-[#7a7a7a] max-w-2xl">
-            I’m a designer based in India, passionate about clean interfaces, systems thinking, and storytelling. I bridge design, code, and communication and I’ve spent the last few years working with dev-first products, AI tools, and Web3 infra.
-          </p>
-        </motion.div>
+      <section className="flex flex-col-reverse md:grid md:grid-cols-2 gap-[80px] items-start">
+ 
         {/* Experience Column */}
-        <motion.div
+       <div className='md:grid md:grid-cols-2 gap-[80px]'>
+       <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
@@ -59,7 +41,28 @@ export default function AboutPage() {
             ))}
           </ul>
         </motion.div>
-     
+       </div>
+
+               {/* Bio Column */}
+               <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+          className="text-right"
+        >
+          <p className="text-xl leading-relaxed text-[#7a7a7a] max-w-2xl mb-8">
+            I’m a designer based in India, passionate about clean interfaces, systems thinking, and storytelling. I bridge design, code, and communication and I’ve spent the last few years working with dev-first products, AI tools, and Web3 infra.
+          </p>
+
+          <div className="grid grid-cols-2 gap-4 mb-8">
+            <div className="bg-[#1a1a1a] aspect-[5/8] rounded" />
+            <div className="bg-[#1a1a1a] aspect-[5/8] rounded" />
+          </div>
+
+          <p className="text-xl leading-relaxed text-[#7a7a7a] max-w-2xl">
+            I’m a designer based in India, passionate about clean interfaces, systems thinking, and storytelling. I bridge design, code, and communication and I’ve spent the last few years working with dev-first products, AI tools, and Web3 infra.
+          </p>
+        </motion.div>
       </section>
     </main>
   );

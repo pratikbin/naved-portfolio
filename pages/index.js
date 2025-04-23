@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { InfiniteCarousel } from "../components/InfiniteCarousel";
 
 const logos = [
   { name: "Monkey DAO", src: "/logos/monkeydao.png" },
@@ -28,7 +29,7 @@ export default function HomePage() {
   
   return (
 <main className="bg-[#0e0e0e] text-[#d4d4d4] min-h-screen px-6 md:px-12 lg:px-20 py-12 font-inter space-y-20">
-      <Navbar />
+      {/* <Navbar /> */}
 
       <motion.section
         initial={{ opacity: 0, y: 20 }}
@@ -69,13 +70,16 @@ export default function HomePage() {
         <div className="relative w-full h-16 overflow-hidden">
           <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-[#0e0e0e] to-transparent z-10 pointer-events-none"></div>
           <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-[#0e0e0e] to-transparent z-10 pointer-events-none"></div>
-          <div className="flex animate-scroll space-x-12 w-max">
+          {/* <div className="flex animate-scroll space-x-12 w-max"> */}
+          <InfiniteCarousel>
+
             {[...logos, ...logos, ...logos].map((logo, i) => (
               <div key={i} className="flex items-center justify-center w-40 h-12 rounded hover:bg-[#2a2a2a] transition duration-500">
                 <img src={logo.src} alt={logo.name} className="max-h-8 object-contain" />
               </div>
             ))}
-          </div>
+            </InfiniteCarousel>
+          {/* </div> */}
         </div>
       </motion.section>
 
@@ -97,7 +101,7 @@ export default function HomePage() {
           100% { transform: translateX(-100%); }
         }
         .animate-scroll {
-          animation: scroll 120s linear infinite;
+          animation: scroll 10s linear infinite;
         }
       `}</style>
     </main>
