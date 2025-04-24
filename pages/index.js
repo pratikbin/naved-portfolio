@@ -17,6 +17,30 @@ const logos = [
   { name: "Superteam Mobile", src: "/logos/superteam-mobile.png" }
 ];
 
+const projects = [
+  { title: "Personal", info: "Expense Tracker", image: "/design/expense_tracker.png" },
+  { title: "Personal", info: "Info Card", image: "/design/info_card.png" },
+  { title: "Personal", info: "Ecom App", image: "/design/ecom_app.png" },
+  { title: "Personal", info: "Search", image: "/design/search.png" },
+  { title: "Personal", info: "Reader App", image: "/design/reader_app.png" },
+  { title: "Personal", info: "To Do App", image: "/design/to_do_app.png" },
+  { title: "Personal", info: "Form Builder", image: "/design/form_builder.png" },
+  { title: "Personal", info: "Work Louder", image: "/design/work_louder.png" },
+  { title: "Personal", info: "Library App", image: "/design/library_app.png" },
+  { title: "Personal", info: "Email App", image: "/design/email_app.png" },
+  { title: "Personal", info: "News App", image: "/design/news_app.png" },
+  { title: "Personal", info: "Search Experince", image: "/design/search_experience.png" },
+  { title: "Personal", info: "Parent Control App", image: "/design/parent_control.png" },
+  { title: "Personal", info: "Fitness App", image: "/design/fitness_app.png" },
+  { title: "Personal", info: "Ratings", image: "/design/ratings.png" },
+  { title: "Personal", info: "Cource Details", image: "/design/course_details.png" },
+  { title: "Personal", info: "Cancel Subscription", image: "/design/cancel_subscription.png" },
+  { title: "Personal", info: "Empty State", image: "/design/empty_state.png" },
+  { title: "Personal", info: "Flight Booking App", image: "/design/flight_booking.png" },
+  { title: "Personal", info: "Note Taking App", image: "/design/note_taking_app.png" },
+  { title: "Personal", info: "Fintech Onboarding", image: "/design/fintech_onboarding.png" },
+];
+
 export default function HomePage() {
   const [copied, setCopied] = useState(false);
   
@@ -90,8 +114,8 @@ export default function HomePage() {
         id="work"
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 scroll-mt-28"
       >
-        {[...Array(6)].map((_, i) => (
-          <Card key={i} />
+        {projects.map((project, i) => (
+          <Card key={i} title={project.title} info={project.info} image={project.image} />
         ))}
       </motion.section>
 

@@ -46,6 +46,7 @@ export default function Navbar() {
           <a href="https://twitter.com/navedux" className="hover:underline transition duration-200">Twitter</a>
           <a href="https://www.linkedin.com/in/navedux/" className="hover:underline transition duration-200">LinkedIn</a>
           <a href="https://t.me/navedux" className="hover:underline transition duration-200">Telegram</a>
+          <a href="https://dribbble.com/Navedux" className="hover:underline transition duration-200">Dribbble</a>
         </nav>
         
         <div className="hidden sm:flex gap-1 text-xs bg-[#1a1a1a] p-1 rounded-full">
