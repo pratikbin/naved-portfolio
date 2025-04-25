@@ -11,6 +11,7 @@ const experiences = [
 ];
 
 export default function AboutPage() {
+  console.log("hey")
   return (
     <main className="bg-[#0e0e0e] text-[#d4d4d4] min-h-screen px-6 md:px-12 lg:px-20 py-12 font-inter space-y-20">
 
