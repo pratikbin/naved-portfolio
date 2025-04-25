@@ -12,6 +12,17 @@ class MyDocument extends Document {
           <meta name="description" content="Portfolio of Naved Alam, showcasing work across UI/UX, branding, Web3, AI tools, and more." />
           <meta name="keywords" content="Naved Alam, Product Designer, Design Engineer, UI/UX, Web3, AI Tools, Design Systems, React, Tailwind CSS, Healthcare Design, Branding, Frontend Development, Design Portfolio" />
           
+          {/* Google Analytics */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LQ2XYJ9TW"></script>
+          <script dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-1LQ2XYJ9TW');
+            `
+          }} />
+          
           {/* Favicon */}
           <link rel="icon" href="/favicon-light.svg" media="(prefers-color-scheme: light)" />
           <link rel="icon" href="/favicon-dark.svg" media="(prefers-color-scheme: dark)" />
