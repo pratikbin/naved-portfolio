@@ -22,7 +22,7 @@ class MyDocument extends Document {
               gtag('config', 'G-1LQ2XYJ9TW');
             `
           }} />
-          
+          <script async src="https://cdn.seline.com/seline.js" data-token="9152f6146242054"></script>
           {/* Favicon */}
           <link rel="icon" href="/favicon-light.svg" media="(prefers-color-scheme: light)" />
           <link rel="icon" href="/favicon-dark.svg" media="(prefers-color-scheme: dark)" />
