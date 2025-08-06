@@ -64,7 +64,7 @@ export default function HomePage() {
         <div className="max-w-lg">
           <p className="text-sm leading-relaxed">
             <span className="text-white block">Hello, I'm Naved Alam</span>
-            <span className="text-[#7a7a7a] block mt-1">A product designer and a builder, and a contributor</span>
+            <span className="text-[#7a7a7a] block mt-1">A product designer and a builder.</span>
           </p>
           <p className="mt-12 text-sm text-[#7a7a7a]">
             Email <span onClick={copyEmail} className="underline cursor-pointer text-white relative">
