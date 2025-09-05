@@ -52,7 +52,7 @@ export default function HomePage() {
   };
   
   return (
-<main className="bg-[#0e0e0e] text-[#d4d4d4] min-h-screen px-6 md:px-12 lg:px-20 py-12 font-inter space-y-20">
+<main className="bg-[#ffffff] text-[#000000] min-h-screen px-6 md:px-12 lg:px-20 py-12 font-inter space-y-20">
       {/* <Navbar /> */}
 
       <motion.section
@@ -63,11 +63,11 @@ export default function HomePage() {
       >
         <div className="max-w-lg">
           <p className="text-sm leading-relaxed">
-            <span className="text-white block">Hello, I'm Naved Alam</span>
+            <span className="text-black block">Hello, I'm Naved Alam</span>
             <span className="text-[#7a7a7a] block mt-1">A product designer and a builder.</span>
           </p>
           <p className="mt-12 text-sm text-[#7a7a7a]">
-            Email <span onClick={copyEmail} className="underline cursor-pointer text-white relative">
+            Email <span onClick={copyEmail} className="underline cursor-pointer text-black relative">
               navedux@gmail.com
               {copied && (
                 <span className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-white text-black text-xs px-2 py-0.5 rounded shadow">
@@ -90,15 +90,15 @@ export default function HomePage() {
         transition={{ delay: 0.4, duration: 0.8 }}
         className="mb-12 overflow-hidden"
       >
-        <p className="text-sm text-[#7a7a7a] mb-4">I've worked with ambitious teams like</p>
+        <p className="text-sm text-[#666666] mb-4">I've worked with ambitious teams like</p>
         <div className="relative w-full h-16 overflow-hidden">
-          <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-[#0e0e0e] to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-[#0e0e0e] to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-[#ffffff] to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-[#ffffff] to-transparent z-10 pointer-events-none"></div>
           {/* <div className="flex animate-scroll space-x-12 w-max"> */}
           <InfiniteCarousel>
 
             {[...logos, ...logos, ...logos].map((logo, i) => (
-              <div key={i} className="flex items-center justify-center w-40 h-12 rounded hover:bg-[#2a2a2a] transition duration-500">
+              <div key={i} className="flex items-center justify-center w-40 h-12 rounded hover:bg-[#f0f0f0] transition duration-500">
                 <img src={logo.src} alt={logo.name} className="max-h-8 object-contain" />
               </div>
             ))}

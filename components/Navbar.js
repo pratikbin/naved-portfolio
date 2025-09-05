@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
    <>
-     <header className="fixed top-0 left-0 right-0 flex items-center w-full h-16 z-50 bg-[#0e0e0e]/70 backdrop-blur-md">
+     <header className="fixed top-0 left-0 right-0 flex items-center w-full h-16 z-50 bg-[#ffffff]/70 backdrop-blur-md">
       <div className="flex w-full justify-between items-center px-6 md:px-12 lg:px-20">
         <Link href="/" className="text-sm font-medium">Naved</Link>
         <button 
@@ -49,10 +49,10 @@ export default function Navbar() {
           <a href="https://dribbble.com/Navedux" className="hover:underline transition duration-200">Dribbble</a>
         </nav>
         
-        <div className="hidden sm:flex gap-1 text-xs bg-[#1a1a1a] p-1 rounded-full">
-          <Link href="/"><button className={`px-4 py-1 rounded-full transition duration-200 ${router.pathname === '/' ? 'bg-[#2a2a2a] text-white' : 'text-[#a1a1a1]'}`}>Work</button></Link>
-          <Link href="/about"><button className={`px-4 py-1 rounded-full transition duration-200 ${router.pathname === '/about' ? 'bg-[#2a2a2a] text-white' : 'text-[#a1a1a1]'}`}>About</button></Link>
-          <Link href="https://t.me/navedux"><button className={`px-4 py-1 rounded-full transition duration-200 ${router.pathname === '/contact' ? 'bg-[#2a2a2a] text-white' : 'text-[#a1a1a1]'}`}>Say hi</button></Link>
+        <div className="hidden sm:flex gap-1 text-xs bg-[#f0f0f0] p-1 rounded-full">
+          <Link href="/"><button className={`px-4 py-1 rounded-full transition duration-200 ${router.pathname === '/' ? 'bg-[#e0e0e0] text-black' : 'text-[#666666]'}`}>Work</button></Link>
+          <Link href="/about"><button className={`px-4 py-1 rounded-full transition duration-200 ${router.pathname === '/about' ? 'bg-[#e0e0e0] text-black' : 'text-[#666666]'}`}>About</button></Link>
+          <Link href="https://t.me/navedux"><button className={`px-4 py-1 rounded-full transition duration-200 ${router.pathname === '/contact' ? 'bg-[#e0e0e0] text-black' : 'text-[#666666]'}`}>Say hi</button></Link>
         </div>
       </div>
 
@@ -67,7 +67,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed sm:hidden inset-0 bg-[#0e0e0e]/80 backdrop-blur-md text-white z-40 flex flex-col justify-between p-6 pt-4"
+            className="fixed sm:hidden inset-0 bg-[#ffffff]/80 backdrop-blur-md text-black z-40 flex flex-col justify-between p-6 pt-4"
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -88,17 +88,17 @@ export default function Navbar() {
             </motion.div>
             <div>
               <div className="mb-6">
-                <p className="text-sm text-[#a1a1a1] mb-1">Email</p>
+                <p className="text-sm text-[#666666] mb-1">Email</p>
                 <p className="text-sm">navedux@gmail.com</p>
               </div>
               <div>
                 <p className="text-sm text-[#a1a1a1] mb-1">Social</p>
                 <div className="flex flex-col gap-4 text-sm">
                
-                  <a href="https://peerlist.io/naved" onClick={() => setIsMenuOpen(false)}>Peerlist</a>
-                  <a href="https://twitter.com/navedux" onClick={() => setIsMenuOpen(false)}>Twitter</a>
-                  <a href="https://www.linkedin.com/in/navedux/" onClick={() => setIsMenuOpen(false)}>LinkedIn</a>
-                  <a href="https://t.me/navedux" onClick={() => setIsMenuOpen(false)}>Telegram</a>
+                  <a href="https://peerlist.io/naved" onClick={() => setIsMenuOpen(false)} className="text-black">Peerlist</a>
+                  <a href="https://twitter.com/navedux" onClick={() => setIsMenuOpen(false)} className="text-black">Twitter</a>
+                  <a href="https://www.linkedin.com/in/navedux/" onClick={() => setIsMenuOpen(false)} className="text-black">LinkedIn</a>
+                  <a href="https://t.me/navedux" onClick={() => setIsMenuOpen(false)} className="text-black">Telegram</a>
                 </div>
               </div>
             </div>
