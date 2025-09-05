@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import Navbar from "../components/Navbar";
+import SnakeGame from "../components/SnakeGame";
 
 const experiences = [
   { company: "NodeOps", period: "2024 - Ongoing", url: "https://nodeops.network" },
@@ -74,7 +75,7 @@ export default function AboutPage() {
           </p>
           <br />
           <p className="text-xl leading-relaxed text-[#666666] max-w-2xl">
-          Along the way, I also spent time designing for healthcare startups, helping make complex health tools feel simple and easy to use for both patients and professionals. 
+          Along the way, I also spent time designing for healthcare startups, helping make complex health tools feel simple and easy to use for both patients and professionals.
           </p>
           <br />
           <p className="text-xl leading-relaxed text-[#666666] max-w-2xl">
@@ -82,6 +83,11 @@ export default function AboutPage() {
           </p>
         </motion.div>
       </section>
+      
+      {/* Snake Game Section */}
+      <div className="mt-16">
+        <SnakeGame />
+      </div>
     </main>
   );
 }
